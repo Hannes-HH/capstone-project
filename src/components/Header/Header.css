@@ -1,13 +1,13 @@
-.header {
+.Header {
   width: 100%;
   cursor: pointer;
   position: fixed;
   display: flex;
   justify-content: center;
   text-transform: uppercase;
-  background-color: black;
+  background-color: grey;
   font-family: "Montserrat", sans-serif;
-  font-size: 5vw;
+  font-size: 6vw;
   padding-bottom: 15px;
   box-shadow: 0px 1px 5px black;
   color: white;

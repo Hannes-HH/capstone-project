@@ -3,7 +3,7 @@ import "./Header.css";
 const Header = () => {
   return (
     <div>
-      <span className="header">Movie Entertaiment APP</span>
+      <span className="Header">Movie APP</span>
     </div>
   );
 };
