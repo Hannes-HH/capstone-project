@@ -1,4 +1,4 @@
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header/Header";
 import SimpleBottomNavigation from "./components/MainNav";
@@ -9,7 +9,7 @@ import Series from "./components/Pages/Series/Series";
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <Header />
       <div className="App">
         <container>
@@ -23,7 +23,7 @@ function App() {
       </div>
 
       <SimpleBottomNavigation />
-    </BrowserRouter>
+    </Router>
   );
 }
 

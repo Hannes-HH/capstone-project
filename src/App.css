@@ -1,11 +1,22 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 * {
   scroll-behavior: smooth;
+}
+:root {
+  --main-bg-color: #282c34;
+  --main-color: white;
 }
 
 .App {
   min-height: 100vh;
-  background-color: #282c34;
-  color: white;
+  background-color: var(--main-bg-color);
+  color: var(--main-color);
   padding-top: 130px;
   padding-bottom: 70px;
 }
@@ -16,14 +27,14 @@
   }
 }
 .pageTitle {
-  text-transform: flex;
+  text-transform: uppercase;
   display: flex;
   justify-content: center;
   font-family: "Montserrat", sans-serif;
   font-size: 2vw;
   padding: 4px;
   border-radius: 50px;
-  color: white;
+  color: var(--main-color);
 }
 @media (max-width: 1000px) {
   .pageTitle {

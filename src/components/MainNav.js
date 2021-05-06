@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import BottomNavigation from "@material-ui/core/BottomNavigation";
 import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
@@ -21,7 +21,7 @@ const useStyles = makeStyles({
 
 export default function SimpleBottomNavigation() {
   const classes = useStyles();
-  const [value, setValue] = React.useState(0);
+  const [value, setValue] = useState(0);
   const history = useHistory();
 
   useEffect(() => {
@@ -42,7 +42,7 @@ export default function SimpleBottomNavigation() {
     >
       <BottomNavigationAction
         style={{ color: "white" }}
-        label="Trending"
+        label="New Releases"
         icon={<WhatshotIcon />}
       />
 
