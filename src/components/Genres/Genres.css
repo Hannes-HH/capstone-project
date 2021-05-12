@@ -1,0 +1,11 @@
+.Chip {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 6px;
+  margin: 2px;
+  color: primary;
+}
+.Chip div {
+  margin: 2px;
+}
