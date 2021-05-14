@@ -8,4 +8,6 @@
 }
 .Chip div {
   margin: 2px;
+  color: black;
+  background-color: lightyellow;
 }
