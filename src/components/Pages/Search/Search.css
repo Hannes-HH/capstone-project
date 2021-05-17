@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.ThemeProvider {
+  display: flex;
+  margin: 15px 0;
+  margin-left: 15px;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+.SearchField {
+  display: flex;
+  align-items: center;
+}
+.Button {
+  margin-left: 15px;
+  display: center;
+}
+
+.Tabs {
+  margin-top: 60px;
+  display: center;
+  width: 50%;
+}
+.SearchIcon {
+  font-size: small;
+}
