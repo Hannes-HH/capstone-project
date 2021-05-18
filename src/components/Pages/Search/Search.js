@@ -46,15 +46,15 @@ const Search = () => {
       <div className="Tabs">
         <Tabs
           value={type}
-          indicatorColor="primary"
+          indicatorColor="secundary"
           textColor="primary"
           onChange={(event, newValue) => {
             setType(newValue);
             setPage(1);
           }}
         >
-          <Tab style={{ width: "50%" }} label="Search Movies" />
-          <Tab style={{ width: "50%" }} label="Search TV Series" />
+          <Tab label="Search Movies" />
+          <Tab label="Search TV Series" />
         </Tabs>
       </div>
 

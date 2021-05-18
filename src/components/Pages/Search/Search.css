@@ -23,8 +23,8 @@
 
 .Tabs {
   margin-top: 60px;
-  display: center;
-  width: 50%;
+  display: flex;
+  justify-content: space-around;
 }
 .SearchIcon {
   font-size: small;

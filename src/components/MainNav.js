@@ -42,7 +42,7 @@ export default function SimpleBottomNavigation() {
     >
       <BottomNavigationAction
         style={{ color: "white" }}
-        label="New Releases"
+        label="New"
         icon={<WhatshotIcon />}
       />
 

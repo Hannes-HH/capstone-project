@@ -9,5 +9,5 @@
 .Chip div {
   margin: 2px;
   color: black;
-  background-color: lightyellow;
+  background-color: var(--main-second-color);
 }
