@@ -11,6 +11,7 @@
 :root {
   --main-bg-color: #282c34;
   --main-color: white;
+  --main-second-color: lightyellow;
 }
 
 .App {

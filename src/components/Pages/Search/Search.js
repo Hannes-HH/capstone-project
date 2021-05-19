@@ -1,11 +1,4 @@
-import {
-  TextField,
-  ThemeProvider,
-  Button,
-  createMuiTheme,
-  Tabs,
-  Tab,
-} from "@material-ui/core";
+import { TextField, Button, Tabs, Tab } from "@material-ui/core";
 import { useState, useEffect } from "react";
 import SearchIcon from "@material-ui/icons/Search";
 import CustomPagination from "../../Pagination/CustomPagination";
@@ -18,15 +11,6 @@ const Search = () => {
   const [searchText, setSearchText] = useState("");
   const [content, setContent] = useState();
   const [numOfPages, setNumOfPages] = useState();
-
-  const darkTheme = createMuiTheme({
-    palette: {
-      type: "dark",
-      primary: {
-        main: "#fff",
-      },
-    },
-  });
 
   useEffect(() => {
     fetch(
@@ -43,38 +27,37 @@ const Search = () => {
 
   return (
     <div className="ThemeProvider">
-      <ThemeProvider theme={darkTheme}>
-        <div className="SearchField">
-          <TextField
-            className="searchBox"
-            label="Search"
-            variant="filled"
-            onChange={(e) => setSearchText(e.target.value)}
-          />
-          <div className="Button">
-            <Button variant="contained" onClick={fetch}>
-              <div className="SearchIcon">
-                <SearchIcon />
-              </div>
-            </Button>
-          </div>
+      <div className="SearchField">
+        <TextField
+          className="searchBox"
+          label="Search"
+          variant="filled"
+          onChange={(e) => setSearchText(e.target.value)}
+        />
+        <div className="Button">
+          <Button variant="contained" onClick={fetch}>
+            <div className="SearchIcon">
+              <SearchIcon />
+            </div>
+          </Button>
         </div>
+      </div>
 
-        <div className="Tabs">
-          <Tabs
-            value={type}
-            indicatorColor="primary"
-            textColor="primary"
-            onChange={(event, newValue) => {
-              setType(newValue);
-              setPage(1);
-            }}
-          >
-            <Tab style={{ width: "50%" }} label="Search Movies" />
-            <Tab style={{ width: "50%" }} label="Search TV Series" />
-          </Tabs>
-        </div>
-      </ThemeProvider>
+      <div className="Tabs">
+        <Tabs
+          value={type}
+          indicatorColor="secundary"
+          textColor="primary"
+          onChange={(event, newValue) => {
+            setType(newValue);
+            setPage(1);
+          }}
+        >
+          <Tab label="Search Movies" />
+          <Tab label="Search TV Series" />
+        </Tabs>
+      </div>
+
       <div>
         <div className="trending">
           {content &&
