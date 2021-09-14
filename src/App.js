@@ -7,6 +7,7 @@ import Movies from "./components/Pages/Movies/Movies";
 import Search from "./components/Pages/Search/Search";
 import Series from "./components/Pages/Series/Series";
 import { ThemeProvider, createMuiTheme } from "@material-ui/core";
+import { Container } from "@material-ui/core";
 
 function App() {
   const darkTheme = createMuiTheme({
@@ -22,7 +23,7 @@ function App() {
       <ThemeProvider theme={darkTheme}>
         <Header />
         <div className="App">
-          <container>
+          <Container>
             <Switch>
               <Route exact path="/">
                 <Trending />
@@ -37,7 +38,7 @@ function App() {
                 <Search />
               </Route>
             </Switch>
-          </container>
+          </Container>
         </div>
 
         <MainNav />
